@@ -1,0 +1,17 @@
+<style>
+    img{
+        width: 180px;
+        height: 200px;
+    }
+</style>
+<div class="row">
+    <div class="panel col-md-3 panel-primary" ng-repeat="book in books track by $index">
+        <a href="#/book/detail/{{book.id}}">
+        <div class="panel-heading ">{{book.name}}</div>
+        <div class="panel-body ">
+            <img  ng-src="{{book.cover}}" />
+        </div>
+        <div class="panel-footer ">{{book.price}}</div>
+        </a>
+    </div>
+</div>

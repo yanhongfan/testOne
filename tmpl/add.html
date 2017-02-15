@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+<form class="form-horizontal">
+    <div calss="form-group">
+        <label for="bookName" class="control-label col-md-2">书名</label>
+        <div class=" col-md-10">
+            <input type="text" id="bookName" class="form-control" placeholder="请填写书的名字" ng-model="book.name"/>
+        </div>
+    </div>
+
+    <div calss="form-group">
+        <label for="bookCover" class="control-label col-md-2">书的封面</label>
+        <div class=" col-md-10">
+            <input type="text" id="bookCover" class="form-control" placeholder="请填写书的封面" ng-model="book.cover"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="bookPrice" class="control-label col-md-2">价格</label>
+        <div class=" col-md-10">
+            <input type="text" id="bookPrice" class="form-control" placeholder="请填写书的价格" ng-model="book.price"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10 col-md-offset-2">
+            <button class="btn btn-success" type="button" ng-click="add()">提交</button>
+        </div>
+
+    </div>
+
+
+</form>
